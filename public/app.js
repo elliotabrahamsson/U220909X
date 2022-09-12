@@ -12,21 +12,27 @@ function build() {
     Ommig.className = 'font-monospace fs-4';
     Header.appendChild(Ommig);
 
+
+    const RutaDiv = document.createElement('div');
+    RutaDiv.setAttribute('id', 'Ruta');
+    RutaDiv.className = 'col d-flex'
+    app.appendChild(RutaDiv);
+
+    const OmmigText = document.createElement('p');
+    OmmigText.innerHTML = 'jadu';
+    OmmigText.className = 'bg-primary d-flex';
+    RutaDiv.appendChild(OmmigText);
+
     const bildDiv = document.createElement('div');
     bildDiv.setAttribute('id', 'Bild');
+    bildDiv.className = 'col bg-primary d-sm-flex w-25';
     app.appendChild(bildDiv);
 
     const Bild = document.createElement('img');
     Bild.setAttribute('src', 'dog.jpg');
+    Bild.className = 'w-50 container-sm'
     bildDiv.appendChild(Bild);
 
-    const RutaDiv = document.createElement('div');
-    RutaDiv.setAttribute('id', 'Ruta');
-    app.appendChild(RutaDiv);
-
-    const MinsommarRuta = document.createElement('p');
-    MinsommarRuta.innerHTML = 'jadu';
-    MinsommarRuta.className = 'bg-primary container-sm';
-    RutaDiv.appendChild(MinsommarRuta);
+    
 
 } 

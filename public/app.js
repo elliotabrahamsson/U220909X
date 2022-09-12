@@ -15,22 +15,25 @@ function build() {
 
     const RutaDiv = document.createElement('div');
     RutaDiv.setAttribute('id', 'Ruta');
-    RutaDiv.className = 'col d-flex'
+    RutaDiv.className = 'position-fixed top-50 start-25 w-25 bg-primary '
+    'h-200';
     app.appendChild(RutaDiv);
 
     const OmmigText = document.createElement('p');
-    OmmigText.innerHTML = 'jadu';
-    OmmigText.className = 'bg-primary d-flex';
+    OmmigText.innerHTML = 'sdjofjdsjfklsdjklfjsdklfjklsdjfklsdkfj' 
+    +'hgfdfgjkwdasdwdassdn fjfgjdklsjfdjifjgfjdkjgldjgfgdflgokdfogkdfokgdfopgrekgopfdgkdopfkgop';
+    OmmigText.className = 'bg-primary  h-25 overflow-auto';
     RutaDiv.appendChild(OmmigText);
+
 
     const bildDiv = document.createElement('div');
     bildDiv.setAttribute('id', 'Bild');
-    bildDiv.className = 'col bg-primary d-sm-flex w-25';
+    bildDiv.className = 'position-fixed top-25 start-50 bg-primary w-25';
     app.appendChild(bildDiv);
 
     const Bild = document.createElement('img');
     Bild.setAttribute('src', 'dog.jpg');
-    Bild.className = 'w-50 container-sm'
+    Bild.className = 'w-75 container-sm'
     bildDiv.appendChild(Bild);
 
     

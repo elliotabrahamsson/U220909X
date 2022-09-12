@@ -12,17 +12,20 @@ function build() {
     Ommig.className = 'font-monospace fs-4';
     Header.appendChild(Ommig);
 
+    const hiddennavbar =document.createElement('div');
+    navbar.className = 'navbar navbar expand';
+    app.appendChild(hiddennavbar);
 
     const RutaDiv = document.createElement('div');
     RutaDiv.setAttribute('id', 'Ruta');
-    RutaDiv.className = 'position-fixed top-50 start-25 w-25 bg-primary '
+    RutaDiv.className = 'position-fixed top-25 start-25 w-25 bg-primary '
     'h-200';
     app.appendChild(RutaDiv);
 
     const OmmigText = document.createElement('p');
-    OmmigText.innerHTML = 'sdjofjdsjfklsdjklfjsdklfjklsdjfklsdkfj' 
-    +'hgfdfgjkwdasdwdassdn fjfgjdklsjfdjifjgfjdkjgldjgfgdflgokdfogkdfokgdfopgrekgopfdgkdopfkgop';
-    OmmigText.className = 'bg-primary  h-25 overflow-auto';
+    OmmigText.innerHTML = 'Jag heter  Elliot Abrahamsson och är 18 år gammal. Just nu går jag ett fjärde år teknik där jag lär mig mycket om programmering' 
+    +'På fritiden tycker jag om att styrketräna, umgås med vänner samt min hund Milo. Han är en valp på fem månader trots hans storlek :)';
+    OmmigText.className = 'bg-primary  h-25 overflow-auto font-monospace fs-5';
     RutaDiv.appendChild(OmmigText);
 
 
